@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | ShopNest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="checkout-page">
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a href="/" class="brand">
+                🛍️ <span>ShopNest</span>
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="cart.html">
+                    🛒 Cart
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="checkout-container">
+
+        <div class="checkout-heading">
+
+            <p>SHOPNEST</p>
+
+            <h1>Checkout</h1>
+
+            <span>
+                Review your order and complete your purchase.
+            </span>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+            <!-- ORDER SUMMARY -->
+
+            <section class="checkout-summary">
+
+                <div class="checkout-card">
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                    <div id="checkout-items"></div>
+
+                    <div class="checkout-total-box">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkout-total">
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <section class="checkout-details">
+
+                <div class="checkout-card">
+
+                    <h2>
+                        Customer Details
+                    </h2>
+
+                    <p class="checkout-card-description">
+                        Your account details are automatically filled in.
+                    </p>
+
+
+                    <form id="checkout-form">
+
+                        <div class="checkout-form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <div class="checkout-form-group">
+
+                            <label for="address">
+                                Delivery Address
+                            </label>
+
+                            <textarea
+                                id="address"
+                                required
+                                placeholder="Enter your delivery address"
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="checkout-place-order-btn"
+                        >
+                            Place Order
+                            <span>→</span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-bottom">
+
+            © 2026 ShopNest. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>
